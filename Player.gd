@@ -23,15 +23,15 @@ signal player_hit
 var gravity = 9.8
 
 # Bullets
-var bullet = load("res://Scenes/Bullet.tscn")
+var bullet = load("res://Scenes/bullet.tscn")
 var instance
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-@onready var gun_anim = $Head/Camera3D/Rifle/AnimationPlayer
-@onready var gun_barrel = $Head/Camera3D/Rifle/RayCast3D
-@onready var gun_anim2 = $Head/Camera3D/Rifle2/AnimationPlayer
-@onready var gun_barrel2 = $Head/Camera3D/Rifle2/RayCast3D
+@onready var gun_anim = $Head/Camera3D/Pistol/AnimationPlayer
+@onready var gun_barrel = $Head/Camera3D/Pistol/RayCast3D
+#@onready var gun_anim2 = $Head/Camera3D/Rifle2/AnimationPlayer
+#@onready var gun_barrel2 = $Head/Camera3D/Rifle2/RayCast3D
 
 
 
@@ -92,12 +92,12 @@ func _physics_process(delta):
 			instance.position = gun_barrel.global_position
 			instance.transform.basis = gun_barrel.global_transform.basis
 			get_parent().add_child(instance)
-		if !gun_anim2.is_playing():
-			gun_anim2.play("Shoot")
-			instance = bullet.instantiate()
-			instance.position = gun_barrel2.global_position
-			instance.transform.basis = gun_barrel2.global_transform.basis
-			get_parent().add_child(instance)
+		#if !gun_anim2.is_playing():
+		#	gun_anim2.play("Shoot")
+			#instance = bullet.instantiate()
+			#instance.position = gun_barrel2.global_position
+			#instance.transform.basis = gun_barrel2.global_transform.basis
+			#get_parent().add_child(instance)
 		
 	
 	move_and_slide()

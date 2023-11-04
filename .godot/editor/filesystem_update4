@@ -1,2 +1,5 @@
-res://node_3d.tscn
+res://Scenes/pistol.tscn
 res://Player.gd
+res://node_3d.tscn
+res://Scenes/bullet.tscn
+res://bullet.gd

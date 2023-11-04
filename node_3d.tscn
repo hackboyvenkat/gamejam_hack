@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://xwekb14bvhgl"]
+[gd_scene load_steps=8 format=3 uid="uid://xwekb14bvhgl"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_7l8dc"]
+[ext_resource type="PackedScene" uid="uid://bn3f5r0cfd4wt" path="res://Scenes/pistol.tscn" id="2_het1k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3kh2m"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -49,3 +50,6 @@ shape = SubResource("ConvexPolygonShape3D_y8hwx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.16525, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="Pistol" parent="Player/Head/Camera3D" instance=ExtResource("2_het1k")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.597512, -0.332432, -0.955494)

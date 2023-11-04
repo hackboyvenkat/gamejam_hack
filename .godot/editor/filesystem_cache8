@@ -1,6 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699091480
+::res://::1699094573
+bullet.gd::GDScript::-1::1699094036::0::1::::<>Node3D<>::
 icon.svg::CompressedTexture2D::7882418851330727067::1699090895::1699090953::1::::<><>::
-node_3d.tscn::PackedScene::1660020534182237003::1699091459::0::1::::<><>::res://Player.gd
-Player.gd::GDScript::-1::1699091301::0::1::::<>CharacterBody3D<>::
+node_3d.tscn::PackedScene::1660020534182237003::1699094554::0::1::::<><>::res://Player.gd<>uid://bn3f5r0cfd4wt::::res://Scenes/pistol.tscn
+Player.gd::GDScript::-1::1699094554::0::1::::<>CharacterBody3D<>::
 README.md::TextFile::-1::1699090895::0::1::::<><>::
+::res://Gun/::1699093791
+Pistol.glb::PackedScene::3131096921561686119::1699092711::1699093791::1::::<><>::
+::res://Scenes/::1699094554
+bullet.tscn::PackedScene::1829893746239478903::1699094554::0::1::::<><>::res://bullet.gd
+pistol.tscn::PackedScene::3357036318496942555::1699094554::0::1::::<><>::uid://bkuyydohiw7n4::::res://Gun/Pistol.glb
