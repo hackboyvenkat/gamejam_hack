@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://xwekb14bvhgl"]
+[gd_scene load_steps=9 format=3 uid="uid://xwekb14bvhgl"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_7l8dc"]
 [ext_resource type="PackedScene" uid="uid://bn3f5r0cfd4wt" path="res://Scenes/pistol.tscn" id="2_het1k"]
@@ -16,6 +16,9 @@ sky = SubResource("Sky_weguk")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x1nyb"]
+albedo_color = Color(0, 0, 0, 1)
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_e50kd"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_y8hwx"]
@@ -31,6 +34,7 @@ shadow_enabled = true
 environment = SubResource("Environment_act6n")
 
 [node name="Floor" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_x1nyb")
 use_collision = true
 size = Vector3(68.8164, 0.1, 53.2209)
 
